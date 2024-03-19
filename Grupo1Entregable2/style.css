@@ -243,7 +243,7 @@ svg {
   font-weight: 500;
 }
 
-svg {
+#services svg {
   width: 80px;
   height: 80px;
   padding: 20px;
@@ -253,7 +253,7 @@ svg {
   margin-right: 5px;
 }
 
-svg:hover {
+#services svg:hover {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
@@ -429,22 +429,26 @@ textarea {
 }
 input[type="submit"] {
   margin-top: 30px; /* Espacio entre el textarea y el botón */
-  width: 300px;
-  display: block;
-  margin-left: auto;
+  width: 100px;
+  margin-right: 70px;
+  height: 25px;
 }
 
 /*----------------------------------------------------------FOOTER---------------------------------------------------------*/
 
 footer {
   background-color: rgb(122, 78, 148);
-  padding: 1px;
   color: white;
-  text-align: right;
-  padding-right: 20px;
   position: fixed;
   bottom: 0;
   width: 1024px;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 0;
+  width: max-content;
+  margin: auto;
+  margin-top: 15px;
 }
 footer a {
   color: white;
@@ -453,4 +457,30 @@ footer a {
 footer a:hover {
   color: rgb(122, 78, 148);
   background-color: white;
+}
+
+footer img {
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 150px;
+}
+
+footer .backToTop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+}
+.backToTop p {
+  margin-top: 0px;
+  font-size: smaller;
+}
+
+.backToTop:hover {
+  color: rgb(122, 78, 148);
+  background-color: white;
+  transition: 0.5s;
 }
