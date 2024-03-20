@@ -24,7 +24,6 @@ h6 {
   text-wrap: balance;
 }
 
-/*---------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES-----------------------------------------*/
 /*h1 {                 ESTA ES OTRA FORMA DE HACER LA IMAGEN DE CABECERA
   margin: 0;
   color: white;
@@ -49,11 +48,13 @@ header h1 {
   margin-left: 50px;
 }
 
+/*---------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES-----------------------------------------*/
+
 #navBar {
   position: relative;
   background-color: rgb(122, 78, 148);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+  padding-left: 0;
 }
 
 #navBar ul {
@@ -63,8 +64,7 @@ header h1 {
   list-style: none;
   padding-left: 0px;
   justify-content: left;
-  margin-top: 0;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 #navBar a {
@@ -96,8 +96,6 @@ header h1 {
 #navBar .submenu ul {
   display: grid;
   grid-template-columns: auto;
-  padding-top: 0;
-  height: 0; /*para que no se vea el margen inferior del hover del nav...*/
 }
 
 #navBar .submenu {
@@ -112,8 +110,8 @@ header h1 {
 
 #navBar .submenu a {
   border: 1px solid rgb(122, 78, 148); /*para que no aparezca el espacio en blanco dando errores en la barra*/
-  padding-left: 15.5px;
-  padding-right: 15.5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* -----------------------------------------------Who We Are SECTION--------------------------------------------------- */
