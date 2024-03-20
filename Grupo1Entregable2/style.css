@@ -272,6 +272,8 @@ svg {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
+  height: 85px;
+  width: 85px;
 }
 
 /*------------------------------------------------PORTFOLIO SECTION-----------------------------------------------------*/
