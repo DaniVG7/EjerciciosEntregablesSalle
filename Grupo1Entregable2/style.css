@@ -7,7 +7,8 @@
 body {
   max-width: 1024px;
   margin: 0 auto;
-  height: 100dvh;
+  /*height: 100dvh altura para dispositivos moviles*/ 
+  box-shadow:  0 0 30px  rgb(122, 78, 148);
 }
 
 p {
@@ -189,6 +190,7 @@ hr {
     "article1 article2 article3"
     "article4 article5 article6";
   gap: 20px;
+  place-items: center;
 }
 
 /*Nombramos a cada seccion del display grid para decidir como los desplegamos */
@@ -198,11 +200,11 @@ hr {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "svg title"
-    "svg lorem";
+    "i title"
+    "none lorem";
 }
-svg {
-  grid-area: svg;
+i {
+  grid-area: i;
 }
 
 #services p {
@@ -214,16 +216,16 @@ svg {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "svg title"
-    "svg lorem";
+    "i title"
+    "none lorem";
 }
 #service3 {
   grid-area: article3;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "svg title"
-    "svg lorem";
+    "i title"
+    "none lorem";
 }
 
 #service4 {
@@ -231,8 +233,8 @@ svg {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "svg title"
-    "svg lorem";
+    "i title"
+    "none lorem";
 }
 
 #service5 {
@@ -240,8 +242,8 @@ svg {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "svg title"
-    "svg lorem";
+    "i title"
+    "none lorem";
 }
 
 #service6 {
@@ -249,36 +251,34 @@ svg {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
-    "svg title"
-    "svg lorem";
+    "i title"
+    "none lorem";
 }
 
 #services h3 {
   margin: auto;
   width: max-content;
-  margin-top: 20px;
   font-size: x-large;
   font-weight: 500;
 }
 
-#services svg {
-  width: 80px;
-  height: 80px;
-  padding: 20px;
-  border: 5px solid lightgrey;
-  border-radius: 50%;
-  fill: rgb(89, 58, 125);
-  margin-right: 5px;
+#services i {
+  font-size: x-large;
+  padding: 10px;
   transition: 1s;
+  border: 3px solid lightgrey;
+  border-radius: 50%;
+  color:  rgb(89, 58, 125);
 }
 
-#services svg:hover {
-  background-color: rgb(89, 58, 125);
-  fill: white;
+#services i:hover {
+  padding: 15px;
+  background-color: rgb(131, 91, 176);
+  color: white;
   transition: 1s;
-  height: 85px;
-  width: 85px;
+  margin: 3px;
 }
+
 
 /*------------------------------------------------PORTFOLIO SECTION-----------------------------------------------------*/
 
@@ -294,7 +294,9 @@ svg {
     "img8 img9 img10";
   justify-content: center;
   padding-bottom: 100px;
+
 }
+
 #portfolio h2 {
   grid-area: title;
   margin: auto;
@@ -312,6 +314,7 @@ svg {
   color: rgb(160, 159, 159);
   font-weight: 400;
 }
+
 .img2 {
   grid-area: img2;
 }
@@ -349,10 +352,11 @@ svg {
 }
 
 #portfolio img:hover {
-  transform: rotate(-15deg);
+  transform: rotate(-15deg) scale(1.1);
+  margin: 5px;
 }
 #portfolio .img6:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(1.1);
   border-radius: 50%;
 }
 
@@ -441,6 +445,9 @@ input {
   margin-bottom: 5px;
   width: 300px;
 }
+input:hover{
+
+}
 
 textarea {
   width: 300px;
@@ -493,8 +500,9 @@ footer .backToTop {
   position: absolute;
   right: 0;
   bottom: 0;
-  text-align: center;
   padding: 5px;
+  text-align: center;
+  height: 50px;
   transition: 0.5s;
 }
 .backToTop p {
