@@ -276,10 +276,8 @@ svg {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
-}
-
-#services p {
-  text-align: justify;
+  height: 85px;
+  width: 85px;
 }
 
 /*------------------------------------------------PORTFOLIO SECTION-----------------------------------------------------*/
@@ -352,12 +350,10 @@ svg {
 
 #portfolio img:hover {
   transform: rotate(-15deg);
-  transition: 1s;
 }
 #portfolio .img6:hover {
   transform: rotate(360deg);
   border-radius: 50%;
-  transition: 2s;
 }
 
 /*--------------------------------------------------LOCATION SECTION----------------------------------------------------*/
@@ -377,7 +373,7 @@ svg {
   font-size: medium;
   margin-top: 20px;
   color: grey;
-  font-weight: 500;
+  font-weight: 400;
   grid-area: title;
 }
 iframe {
