@@ -7,16 +7,21 @@
 body {
   max-width: 1024px;
   margin: 0 auto;
-  /*height: 100dvh altura para dispositivos moviles*/ 
-  box-shadow:  0 0 15px  rgb(122, 78, 148);
+  /*height: 100dvh altura para dispositivos moviles*/
+  /*box-shadow:  0 0 15px  rgb(122, 78, 148);*/
 }
 
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
-  text-wrap:balance;
+  text-wrap: balance;
 }
 
 /*---------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES-----------------------------------------*/
@@ -268,7 +273,7 @@ i {
   transition: 1s;
   border: 3px solid lightgrey;
   border-radius: 50%;
-  color:  rgb(89, 58, 125);
+  color: rgb(89, 58, 125);
 }
 
 #services i:hover {
@@ -278,7 +283,6 @@ i {
   transition: 1s;
   margin: 3px;
 }
-
 
 /*------------------------------------------------PORTFOLIO SECTION-----------------------------------------------------*/
 
@@ -294,7 +298,6 @@ i {
     "img8 img9 img10";
   justify-content: center;
   padding-bottom: 100px;
-
 }
 
 #portfolio h2 {
@@ -398,16 +401,20 @@ iframe:hover {
   width: max-content;
   margin: auto;
   display: grid;
-  align-items: center;
   gap: 50px;
   grid-template-columns: auto auto;
   grid-template-areas:
     "title title"
     "map address";
+  place-items: center;
 }
 .address {
   grid-area: address;
-  width: 80%;
+  width: max-content;
+}
+
+.address h4:first-child {
+  margin-top: 0px;
 }
 
 /*-----------------------------------------------EMAIL US SECTION-------------------------------------------------------*/
@@ -445,8 +452,7 @@ input {
   margin-bottom: 5px;
   width: 300px;
 }
-input:hover{
-
+input:hover {
 }
 
 textarea {
