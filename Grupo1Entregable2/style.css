@@ -7,10 +7,15 @@
 body {
   max-width: 1024px;
   margin: 0 auto;
+  height: 100dvh;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 /*---------------------------------------BARRA DE NAVEGACION Y SUBMENÚ SERVICES-----------------------------------------*/
-h1 {
+/*h1 {                 ESTA ES OTRA FORMA DE HACER LA IMAGEN DE CABECERA
   margin: 0;
   color: white;
   padding: 150px;
@@ -18,7 +23,20 @@ h1 {
   background-image: url(img/header.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* Ajusta la imagen para cubrir completamente el área del h1 */
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el área del h1
+}*/
+.imagenCabecera {
+  height: 350px;
+  background-image: url(img/header.jpg);
+  background-position: center 45%;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  margin-left: 50px;
 }
 
 #navBar {
@@ -45,12 +63,12 @@ h1 {
   text-align: center;
   text-decoration: none;
   color: white;
+  transition: 1s;
 }
 
 #navBar a:hover {
   background-color: white;
   color: rgb(122, 78, 148);
-  transition: 1s;
 }
 
 #navBar .submenu {
@@ -96,11 +114,11 @@ h1 {
   font-size: xx-large;
   font-weight: 500;
 }
-.aboutUs {
+h2 + p {
   width: 500px;
   margin: auto;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #whoWeAre .imagen1 {
@@ -114,26 +132,42 @@ h1 {
 
 .articles {
   display: grid;
-  grid-template-columns: 45% 1% 45%;
-  gap: 40px;
+  grid-template-columns: 45% 5% 45%;
+  grid-template-areas:
+    "leftArticle hr rightArticle1"
+    "leftArticle hr aside"
+    "leftArticle hr rightArticle2";
   background-color: rgb(248, 248, 248);
   padding-left: 20px;
   padding-right: 20px;
 }
-
+.leftArticle {
+  grid-area: leftArticle;
+}
+.rightArticle1 {
+  grid-area: rightArticle1;
+}
+.rightArticle2 {
+  grid-area: rightArticle2;
+}
+hr {
+  grid-area: hr;
+}
 .ad {
   margin: auto;
   display: block;
+  transition: 1s; /* Transición para el estado inicial */
 }
+
 .ad:hover {
-  width: 370px;
-  transition: 2s;
+  transform: scale(1.2); /* Escala la imagen al 120% */
 }
 
 /*---------------------------------------------------OUR SERVICES SECTION-------------------------------------------------------*/
 
 #services h2 {
   margin: auto;
+  margin-bottom: 40px;
   width: max-content;
   grid-area: title;
   font-size: xx-large;
@@ -223,7 +257,7 @@ svg {
   font-weight: 500;
 }
 
-svg {
+#services svg {
   width: 80px;
   height: 80px;
   padding: 20px;
@@ -231,15 +265,13 @@ svg {
   border-radius: 50%;
   fill: rgb(89, 58, 125);
   margin-right: 5px;
+  transition: 1s;
 }
 
-svg:hover {
+#services svg:hover {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
-  padding: 12px;
-  width: 90px;
-  height: 90px;
 }
 
 #services p {
@@ -273,8 +305,10 @@ svg:hover {
   grid-area: p;
   width: max-content;
   margin: auto;
-  margin-bottom: 20px;
   margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgb(160, 159, 159);
+  font-weight: 400;
 }
 .img2 {
   grid-area: img2;
@@ -309,19 +343,16 @@ svg:hover {
 #portfolio img {
   margin-bottom: 10px;
   margin-right: 5px;
+  transition: 1s;
 }
 
 #portfolio img:hover {
   transform: rotate(-15deg);
   transition: 1s;
-  width: 250px ;
-  height: 200px;
 }
 #portfolio .img6:hover {
   transform: rotate(360deg);
   border-radius: 50%;
-  height: 170px;
-  width: 220px;
   transition: 2s;
 }
 
@@ -351,6 +382,12 @@ iframe {
   width: 300px;
   height: 300px;
   grid-area: map;
+  transition: 1s;
+}
+
+iframe:hover {
+  transform: scale(1.2);
+  border-radius: 0%;
 }
 
 .findUs {
@@ -413,19 +450,27 @@ textarea {
 }
 input[type="submit"] {
   margin-top: 30px; /* Espacio entre el textarea y el botón */
-  width: 300px;
-  display: block;
-  margin-left: auto;
+  width: 100px;
+  margin-right: 70px;
+  height: 25px;
 }
 
 /*----------------------------------------------------------FOOTER---------------------------------------------------------*/
 
 footer {
   background-color: rgb(122, 78, 148);
-  padding: 1px;
   color: white;
-  text-align: right;
-  padding-right: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 1024px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+  width: max-content;
+  margin: auto;
+  margin-top: 15px;
 }
 footer a {
   color: white;
@@ -434,4 +479,31 @@ footer a {
 footer a:hover {
   color: rgb(122, 78, 148);
   background-color: white;
+}
+
+footer img {
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 150px;
+}
+
+footer .backToTop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  transition: 0.5s;
+}
+.backToTop p {
+  margin-top: 0px;
+  font-size: smaller;
+}
+
+.backToTop:hover {
+  color: rgb(122, 78, 148);
+  background-color: white;
+  font-weight: bold;
 }

@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>My Bussines Webpage</h1>
+      <div class="imagenCabecera"><h1>My Bussines Webpage</h1></div>
       <nav id="navBar">
         <ul>
           <li><a href="#whoWeAre">Who we are</a></li>
@@ -38,12 +38,12 @@
       <!--En cada section un ID para que se pueda enlazar con la barra de navegación y dar estilos con CSS-->
       <section id="whoWeAre">
         <h2>Who we are?</h2>
-        <p class="aboutUs">
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
           necessitatibus nostrum nam autem repellendus est.
         </p>
         <div class="articles">
-          <article>
+          <article class="leftArticle">
             <h3>Lorem ipsum</h3>
             <img
               src="img/1.jpg"
@@ -75,7 +75,7 @@
             </p>
           </article>
           <hr />
-          <aside>
+          <article class="rightArticle1">
             <h3>Lorem ipsum</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -87,7 +87,11 @@
               enim ab explicabo, doloremque assumenda numquam dolore cum
               voluptates?
             </p>
+          </article>
+          <aside>
             <img src="img/ad.png" alt="Advertise Here" class="ad" />
+          </aside>
+          <article class="rightArticle2">
             <h3>Lorem ipsum</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -98,7 +102,7 @@
               consequuntur commodi quia, soluta laudantium cumque ea. Quia vel,
               laudantium ea ex sit voluptates dignissimos explicabo nihil?
             </p>
-          </aside>
+          </article>
         </div>
       </section>
       <section id="services">
@@ -142,7 +146,6 @@
         <article id="service3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            id="Layer_1"
             data-name="Layer 1"
             viewBox="0 0 24 24"
             width="512"
@@ -162,7 +165,6 @@
         <article id="service4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            id="Bold"
             viewBox="0 0 24 24"
             width="512"
             height="512"
@@ -177,7 +179,6 @@
         <article id="service5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            id="Layer_1"
             height="512"
             viewBox="0 0 24 24"
             width="512"
@@ -196,7 +197,6 @@
         <article id="service6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            id="Layer_1"
             data-name="Layer 1"
             viewBox="0 0 24 24"
             width="512"
@@ -216,7 +216,6 @@
       <section id="portfolio">
         <h2>Portfolio</h2>
         <h4>There are succes projects created by us</h4>
-
         <img
           src="img/2.jpg"
           alt="imagen2"
@@ -287,11 +286,9 @@
         <article class="findUs">
           <h3>You can find us</h3>
           <iframe
-            style="border: 3px solid black"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.41144077395!2d2.1274877123176696!3d41.40858647117743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816c5cc995f%3A0xe6d45d60cbf71998!2sLa%20Salle%20Campus%20Barcelona-URL!5e0!3m2!1ses!2ses!4v1710622990923!5m2!1ses!2ses"
             width="600"
             height="450"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -351,11 +348,36 @@
       </section>
     </main>
     <footer class="footer">
+      <a href="https://www.salleurl.edu/es" target="_blank">
+        <img
+          src="img/sallefooter.png"
+          alt="La Salle Universitat Ramon Llull Logo"
+        />
+      </a>
       <p>
         © 2016 -
         <a href="https://www.salleurl.edu/es" target="_blank">LaSalle,</a> All
         Rights Reserved.
       </p>
+      <a href="#">
+        <div class="backToTop">
+          <svg
+            data-testid="geist-icon"
+            stroke-linejoin="round"
+            viewBox="0 0 16 16"
+            width="20px"
+            style="color: currentcolor"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.70711 1.39644C8.31659 1.00592 7.68342 1.00592 7.2929 1.39644L2.21968 6.46966L1.68935 6.99999L2.75001 8.06065L3.28034 7.53032L7.25001 3.56065V14.25V15H8.75001V14.25V3.56065L12.7197 7.53032L13.25 8.06065L14.3107 6.99999L13.7803 6.46966L8.70711 1.39644Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <p>BACK TO TOP</p>
+        </div>
+      </a>
     </footer>
   </body>
 </html>
