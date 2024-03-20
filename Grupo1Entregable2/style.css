@@ -237,6 +237,9 @@ svg:hover {
   background-color: rgb(89, 58, 125);
   fill: white;
   transition: 1s;
+  padding: 12px;
+  width: 90px;
+  height: 90px;
 }
 
 #services p {
@@ -311,10 +314,14 @@ svg:hover {
 #portfolio img:hover {
   transform: rotate(-15deg);
   transition: 1s;
+  width: 250px ;
+  height: 200px;
 }
 #portfolio .img6:hover {
   transform: rotate(360deg);
   border-radius: 50%;
+  height: 170px;
+  width: 220px;
   transition: 2s;
 }
 
