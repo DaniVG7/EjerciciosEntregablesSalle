@@ -59,7 +59,7 @@ header h1 {
 
 #navBar ul {
   display: grid;
-  grid-template-columns: auto auto auto auto auto; /* Definir cuatro columnas de ancho automático */
+  grid-template-columns: auto auto auto auto auto;
   font-size: x-large;
   list-style: none;
   padding-left: 0px;
@@ -449,8 +449,6 @@ input {
   border: none;
   margin-bottom: 5px;
   width: 300px;
-}
-input:hover {
 }
 
 textarea {
