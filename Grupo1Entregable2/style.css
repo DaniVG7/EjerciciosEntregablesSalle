@@ -84,7 +84,6 @@ header h1 {
 #navBar .submenu {
   display: none;
   position: absolute;
-  width: max-content;
   top: 72px; /*para bajarlo para cuadrarlo con la barra de navegacion...*/
   left: 165px;
 }
@@ -109,9 +108,9 @@ header h1 {
 }
 
 #navBar .submenu a {
+  padding-left: 15.5px;
+  padding-right: 15.5px;
   border: 1px solid rgb(122, 78, 148); /*para que no aparezca el espacio en blanco dando errores en la barra*/
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* -----------------------------------------------Who We Are SECTION--------------------------------------------------- */
