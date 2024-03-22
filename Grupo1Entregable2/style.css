@@ -8,7 +8,7 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   /*height: 100dvh altura para dispositivos moviles*/
-  /*box-shadow:  0 0 15px  rgb(122, 78, 148);*/
+  /*box-shadow: 0 0 100px rgb(122, 78, 148);*/
 }
 
 p {
