@@ -329,7 +329,7 @@ input[type="submit"] {
 /*----------------------------------------------------------FOOTER---------------------------------------------------------*/
 
 footer {
-  background-color: rgb(122, 78, 148);
+  background-color: rgba(122, 78, 148, 0.7);
   color: white;
   padding: 12px;
   text-align: center;
