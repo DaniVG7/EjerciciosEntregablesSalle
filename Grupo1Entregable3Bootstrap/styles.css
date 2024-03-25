@@ -388,6 +388,7 @@ footer .backToTop {
   }
   .header h1 {
     color: black;
+    font-weight: 700;
   }
   .navbar {
     text-align: center;
