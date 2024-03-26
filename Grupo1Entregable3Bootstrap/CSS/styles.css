@@ -316,7 +316,8 @@ input {
   width: 65%;
 }
 input:focus, textarea:focus{
-  box-shadow: 0 0 20px rgb(255, 0, 200);
+  /* box-shadow: 0 0 20px rgb(255, 0, 200); */
+  filter: drop-shadow(10px 3px 10px rgb(255, 255, 255));
 }
 
 textarea {
