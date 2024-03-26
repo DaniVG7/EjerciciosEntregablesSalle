@@ -8,6 +8,7 @@
 body {
   width: 1024px;
   margin: auto;
+  max-width: 100vw; 
 }
 
 .header {
@@ -401,9 +402,7 @@ footer .backToTop {
     align-items: center;
     margin-top: 20px;
   }
-  .address div {
-    text-align: center;
-  }
+    
   iframe {
     max-width: 100vw;
   }
