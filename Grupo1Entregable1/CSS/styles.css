@@ -279,22 +279,22 @@ iframe:hover {
 
 /*-----------------------------------------------EMAIL US SECTION-------------------------------------------------------*/
 
-#contactUs {
+#emailUs {
   background-color: rgb(89, 58, 125);
   margin: auto;
   color: white;
   margin-top: 5%;
   padding-top: 5px;
   padding-bottom: 50px;
-  background-image: url(../img/map-image.png);
+  background-image: url(img/map-image.png);
   background-size: cover;
 }
 
-#contactUs h2 {
+#emailUs h2 {
   text-align: center;
 }
 
-#contactUs form {
+#emailUs form {
   margin: auto;
   text-align: center;
   margin-top: 30px;
