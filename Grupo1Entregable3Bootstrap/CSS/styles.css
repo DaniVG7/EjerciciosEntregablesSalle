@@ -321,7 +321,6 @@ input:focus, textarea:focus{
 
 textarea {
   width: 65%;
-  resize: none;
   border-radius: 5px;
   vertical-align: top;
 }
@@ -329,6 +328,9 @@ textarea {
 input[type="submit"] {
   margin-top: 30px;
   width: 100px;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(71, 93, 238);
 }
 
 /*----------------------------------------------------------FOOTER---------------------------------------------------------*/
@@ -425,3 +427,21 @@ footer .backToTop {
 }
 
 
+@media (max-width: 480px) {
+
+  input{
+    width: 80vw;
+    display: block;
+    margin: auto;
+    height: 35px;
+  }
+  textarea{
+    width: 80vw;
+    display: block;
+    margin: auto;
+  }
+  label{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
