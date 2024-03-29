@@ -36,6 +36,12 @@ body {
   margin-right: 5%;
 }
 
+.barranav img{
+  width: 40%;
+  height: 60px;
+  width: 150px;
+}
+
 h1 {
   color: white;
 }
