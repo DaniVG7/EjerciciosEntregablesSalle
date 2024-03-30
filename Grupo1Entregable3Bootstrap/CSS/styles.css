@@ -6,9 +6,8 @@
   }
   
 body {
-  width: 1024px;
+  max-width: 1024px;  /* Ver diferencia con width=1024px simple en el galaxy fold 2 */
   margin: auto;
-  max-width: 100vw; /*Por configuracion en dispositivos como galaxy fold*/
 }
 
 
