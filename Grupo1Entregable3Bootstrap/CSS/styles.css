@@ -224,23 +224,18 @@ h1 {
 }
 #portfolio img {
   transition: 1s;
-}
-
-#portfolio img:hover {
-  transform: scale(1.1) rotate(-15deg);
-  margin: 5px;
-}
-#portfolio .img6:hover {
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-
-#portfolio img {
   width: 300px;
   margin: auto;
   margin: 5px;
 }
 
+#portfolio img:hover {
+  transform: rotate(-15deg);
+}
+#portfolio .img6:hover {
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
 .portfolio {
   max-width: 1024px;
   justify-content: center;
