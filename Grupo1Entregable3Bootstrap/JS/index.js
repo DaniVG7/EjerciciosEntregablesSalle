@@ -3,9 +3,8 @@ function printAllDivs(){
     }
     window.addEventListener("load", printAllDivs);
     document.addEventListener("mouseover", function (evento) {
-      evento.target.classList.add("redBackground")
+      evento.target.classList.add("blackBackground")
     })
     document.addEventListener("mouseout", function (evento) {
-      evento.target.classList.remove("redBackground")
+      evento.target.classList.remove("blackBackground")
     })
-    
